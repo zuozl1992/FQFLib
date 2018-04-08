@@ -25,16 +25,6 @@ void FQFMediaPlayer::closeStream()
 	media->closeStream();
 }
 
-AVPacket FQFMediaPlayer::readStream()
-{
-	return media->readStream();
-}
-
-bool FQFMediaPlayer::decodePacket(const AVPacket * pkt)
-{
-	return media->decodePacket(pkt);
-}
-
 bool FQFMediaPlayer::yuvToRgb(char * outSpace, int outWidth, int outHeight)
 {
 	return media->yuvToRgb(outSpace, outWidth, outHeight);
@@ -43,11 +33,6 @@ bool FQFMediaPlayer::yuvToRgb(char * outSpace, int outWidth, int outHeight)
 std::string FQFMediaPlayer::getError()
 {
 	return media->getError();
-}
-
-bool FQFMediaPlayer::packetIsVideo(int streamIndex)
-{
-	return media->packetIsVideo(streamIndex);
 }
 
 bool FQFMediaPlayer::getYuvSize(int * w, int * h)
