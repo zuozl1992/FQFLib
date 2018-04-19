@@ -1,5 +1,5 @@
 # FQFLib
-## FQFLib V1.2 [fqflib.zuozl.com](http://fqflib.zuozl.com).
+## FQFLib V1.1 [fqflib.zuozl.com](http://fqflib.zuozl.com).
 * 基于FFmpeg的rtsp/rtmp网络流媒体播放库
 	* 项目文档：
 		* [fqflib.zuozl.com/doc](http://fqflib.zuozl.com/doc)；
