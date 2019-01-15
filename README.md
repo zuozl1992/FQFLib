@@ -12,3 +12,4 @@
 		* 将对应的对象指针通过FQFDemuxThread构造函数即可；
 		* FQFDemuxThread为顶层操作类，实例化该类即可完成对应功能；
 		* sample中有qt音频播放驱动及qtquick视频（图片）传递驱动示例。
+		* 使用ffmpeg 4.1完成，运行时需要具有ffmpeg对应的DLL文件

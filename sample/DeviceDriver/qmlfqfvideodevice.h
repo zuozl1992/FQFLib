@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QImage>
 #include <QQuickImageProvider>
+#include <QMutex>
 #include "fqfvideodevice.h"
 
 class QmlFQFVideoDevice : public QObject , public FQF::FQFVideoDevice , public QQuickImageProvider
@@ -23,14 +24,28 @@ public:
     //@param width 图像的宽
     //@param height 图像的高
     virtual void writeToDeviceBuffer(unsigned char *data,int width,int height);
+    //暂停
+    //@param isPause 为true时暂停播放
+    virtual void setPause(bool isPause);
+    //写入音频封面
+    //@param img 图片
+    void writeToDeviceBuffer(QImage img);
     //向qml传递文件
     QPixmap requestPixmap(const QString &id, QSize *size, const QSize &requestedSize);
+    //获取视频的宽
+    int getVideoWidth();
+    //获取视频的高
+    int getVideoHeight();
 
 signals:
+    //新图片准备就绪
     void callQmlRefeshImg();
 
 protected:
     QPixmap pig;
+    QMutex mux;
+    int width = 500;
+    int height = 500;
 };
 
 #endif // QMLFQFVIDEODEVICE_H
