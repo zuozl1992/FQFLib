@@ -11,7 +11,7 @@
 		* 获取媒体信息（时长、尺寸等）
 		* 过程信息
 	* 项目文档：
-		* [fqflib.zuozl.com/doc](https://fqflib.zuozl.com/?page_id=199)；
+		* [fqflib.zuozl.com/doc](https://fqflib.zuozl.com/?page_id=32)；
 		* 对应头文件中均有详细介绍。
 	* 目录介绍：
 		* src->Qt版本源码，直接添加pri文件到工程即可使用，请在pri文件配置本地FFmpeg目录；
