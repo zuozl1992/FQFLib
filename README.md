@@ -1,5 +1,5 @@
 # FQFLib
-## FQFLib V2.0 [fqflib.zuozl.com](http://fqflib.zuozl.com).
+## FQFLib V2.0
 * 基于FFmpeg的多媒体、流媒体（Rtsp/Rtmp）Qt/C++播放库。
 	* 支持格式：
 		* 文件：mp4、wmv、mov、flac、mp3等，其余格式跳转功能需要简单修改源码。
@@ -11,7 +11,6 @@
 		* 获取媒体信息（时长、尺寸等）
 		* 过程信息
 	* 项目文档：
-		* [fqflib.zuozl.com/doc](https://fqflib.zuozl.com/?page_id=32)；
 		* 对应头文件中均有详细介绍。
 	* 目录介绍：
 		* src->Qt版本源码，直接添加pri文件到工程即可使用，请在pri文件配置本地FFmpeg目录；
@@ -26,7 +25,7 @@
 		* 使用ffmpeg 4.1完成，运行时需要具有ffmpeg对应的DLL文件，并放入exe所在的文件夹或配置环境变量
 
 ## FQFLib应用示例
-* [FQFPlayer:Github/zuozhulin88/FQFPlayer](https://github.com/zuozhulin88/FQFPlayer)
+* [FQFPlayer:Github/zuozhulin88/FQFPlayer](https://github.com/zuozl1992/FQFPlayer)
 * 展示
 
 ![](./images/music.jpg)
